@@ -1,0 +1,35 @@
+https://api.open-meteo.com/v1/forecast?latitude=46.4857&longitude=30.7438&current=temperature_2m&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&forecast_days=1
+
+{
+  "latitude": 46.5,
+  "longitude": 30.75,
+  "generationtime_ms": 0.0338554382324219,
+  "utc_offset_seconds": 0,
+  "timezone": "GMT",
+  "timezone_abbreviation": "GMT",
+  "elevation": 42,
+  "current_units": {
+    "time": "iso8601",
+    "interval": "seconds",
+    "temperature_2m": "°C"
+  },
+  "current": {
+    "time": "2025-02-11T14:00",
+    "interval": 900,
+    "temperature_2m": -2
+  },
+  "daily_units": {
+    "time": "iso8601",
+    "temperature_2m_max": "°C",
+    "temperature_2m_min": "°C",
+    "precipitation_probability_max": "%"
+  },
+  "daily": {
+    "time": [
+      "2025-02-11"
+    ],
+    "temperature_2m_max": [-1.9],
+    "temperature_2m_min": [-6],
+    "precipitation_probability_max": [0]
+  }
+}

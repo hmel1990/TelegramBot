@@ -1,0 +1,4 @@
+http://htmlweb.ru/json/geo/timezone?latitude=48.5833&longitude=39.3333&country=RU
+48.5833, 39.3333 Луганск
+http://htmlweb.ru/json/geo/timezone?latitude=46.4825&longitude=30.7233&country=UA
+46.4825, 30.7233 Одесса
