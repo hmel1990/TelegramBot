@@ -3,7 +3,7 @@ services:
     name: telegram-bot-csharp
     env: docker
     plan: free
-    branch: main # или ваша ветка
+    branch: main
     dockerfilePath: ./Dockerfile
     dockerContext: .
     envVars:
