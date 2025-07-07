@@ -83,13 +83,21 @@ if (string.IsNullOrWhiteSpace(token))
             }
         }
 
-        private static async void OnMessage(ITelegramBotClient client, Update update)
-        {
-            if (update.Message.Text.ToLower().Contains(""))
-            {
-                await client.SendTextMessageAsync(update.Message.Chat.Id, "Выбери действие из меню ниже 👇", replyMarkup: GetButtons());
-            }
-        }
+       private static async void OnMessage(ITelegramBotClient client, Update update)
+{
+    var text = update.Message?.Text?.ToLower();
+
+    if (string.IsNullOrEmpty(text))
+        return;
+
+    if (text.Contains("меню") || text == "/start")
+    {
+        await client.SendTextMessageAsync(update.Message.Chat.Id, "Выбери действие из меню 👇", replyMarkup: GetButtons());
+    }
+    // во всех остальных случаях — не отвечаем
+}
+
+
 
         private static IReplyMarkup? GetButtons()
         {
