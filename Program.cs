@@ -87,7 +87,7 @@ if (string.IsNullOrWhiteSpace(token))
         {
             if (update.Message.Text.ToLower().Contains(""))
             {
-                await client.SendTextMessageAsync(update.Message.Chat.Id, ".", replyMarkup: GetButtons());
+                await client.SendTextMessageAsync(update.Message.Chat.Id, "Выбери действие из меню ниже 👇", replyMarkup: GetButtons());
             }
         }
 
