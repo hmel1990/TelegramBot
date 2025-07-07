@@ -67,7 +67,7 @@ namespace TelegramBot
 
         public override string ToString()
         {
-            return $"{Hour}:{Minute}";
+            return $"{Hour:D2}:{Minute:D2}";
         }
 
         public class AdditionalTime
