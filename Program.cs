@@ -13,7 +13,13 @@ namespace TelegramBot
     {
         static async Task Main(string[] args)
         {
-            var token = "7900453227:AAGSsNnS3RzXQYXU3wBx4sEcL0Ehf3lZ9Bg";
+            var token = Environment.GetEnvironmentVariable("TELEGRAM_TOKEN");
+
+if (string.IsNullOrWhiteSpace(token))
+{
+    Console.WriteLine("❌ TELEGRAM_TOKEN не задан");
+    return;
+}
 
             Host maxClient = new Host(token);
             maxClient.Start();
