@@ -34,7 +34,7 @@ if (string.IsNullOrWhiteSpace(token))
             //var OW = await CityWeather.CreateAsyncOdessaWeather(LuhanskWeather.FilePath);
             //Console.WriteLine(OW);
 
-            Console.ReadLine();
+            await Task.Delay(-1);
         }
 
 
