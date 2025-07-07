@@ -28,6 +28,7 @@ if (string.IsNullOrWhiteSpace(token))
             maxClient.OnMessage += WeatherInLuhansk;
             maxClient.OnMessage += WeatherInOdessa;
             maxClient.OnMessage += TimeInOdessa;
+            maxClient.OnMessage += TimeInLuhansk;
 
 
 
